@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Detallia.pe | Nosotros</title>
 
+  <!-- Framework: Bootstrap CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 
 <body>
+
+  <!-- ===== NAVBAR (Bootstrap component) ===== -->
   <header class="site-header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
+      <div class="layout">
         <a class="navbar-brand fw-semibold" href="../index.html">Detallia.pe</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
           aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
@@ -30,67 +36,83 @@
     </nav>
   </header>
 
-  <main class="py-5">
-    <div class="container">
-      <header class="mb-4">
-        <h1 class="display-6 fw-bold">Sobre Detallia.pe</h1>
-        <p class="text-muted mb-0">Cada torta es un detalle especial.</p>
-      </header>
+  <main>
 
-      <div class="row g-4">
-        <div class="col-12 col-lg-7">
-          <section class="mb-4">
-            <h2 class="h3 fw-semibold">Nuestra historia</h2>
-            <p class="text-muted">
-              Detallia.pe nació de la pasión por la repostería y el gusto por los pequeños detalles.
-              Empezamos preparando tortas para familia y amigos, y hoy atendemos pedidos personalizados para distintos eventos.
-            </p>
-          </section>
+    <!-- ===== HERO / CABECERA ===== -->
+    <section class="section section-alt">
+      <div class="layout">
+        <header class="section-head">
+          <h1 class="page-title">Sobre Detallia.pe</h1>
+          <p class="page-subtitle">Cada torta es un detalle especial.</p>
+        </header>
 
-          <section class="mb-4">
-            <h2 class="h3 fw-semibold">Lo que nos distingue</h2>
-            <ul class="text-muted">
-              <li>Diseños creativos según tu temática.</li>
-              <li>Sabores caseros con recetas cuidadas.</li>
-              <li>Presentación limpia y lista para sorprender.</li>
-            </ul>
-          </section>
+        <div class="about-grid">
 
-          <section>
-            <h2 class="h3 fw-semibold">Video</h2>
-            <p class="text-muted">Un video de decoración para inspirarte:</p>
+          <!-- Columna principal -->
+          <div class="about-main">
 
-            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/LAXh4L-LIA4?si=dGs0TkttOn5ndLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </section>
-        </div>
+            <section class="about-block">
+              <h2 class="about-title">Nuestra historia</h2>
+              <p class="about-text">
+                Detallia.pe nació de la pasión por la repostería y el gusto por los pequeños detalles.
+                Empezamos preparando tortas para familia y amigos, y hoy atendemos pedidos personalizados para distintos eventos.
+              </p>
+            </section>
 
-        <aside class="col-12 col-lg-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h3 class="h5">Ideas de tortas</h3>
-              <p class="text-muted small mb-2">Lo más pedido por nuestros clientes:</p>
-              <ol class="text-muted mb-0">
+            <section class="about-block">
+              <h2 class="about-title">Lo que nos distingue</h2>
+              <ul class="about-list">
+                <li>Diseños creativos según tu temática.</li>
+                <li>Sabores caseros con recetas cuidadas.</li>
+                <li>Presentación limpia y lista para sorprender.</li>
+              </ul>
+            </section>
+
+            <section class="about-block">
+              <h2 class="about-title">Video</h2>
+              <p class="about-text">Un video de decoración para inspirarte:</p>
+
+              <div class="video-wrap" aria-label="Video de YouTube: decoración de tortas">
+                <iframe
+                  src="https://www.youtube.com/embed/LAXh4L-LIA4?si=dGs0TkttOn5ndLqA"
+                  title="Decoración de tortas - inspiración"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="about-side">
+            <div class="info-card">
+              <h3 class="info-title">Ideas de tortas</h3>
+              <p class="info-subtitle">Lo más pedido por nuestros clientes:</p>
+              <ol class="info-list">
                 <li>Tortas infantiles temáticas</li>
                 <li>Tortas con fotos comestibles</li>
                 <li>Tortas minimalistas neutras</li>
                 <li>Tortas con mensajes especiales</li>
               </ol>
             </div>
-          </div>
-        </aside>
+          </aside>
+
+        </div>
       </div>
-    </div>
+    </section>
+
   </main>
 
-  <footer class="py-4 bg-dark text-light">
-    <div class="container">
-      <p class="mb-0 small">© 2026 Detallia.pe</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="layout footer-grid">
+      <p class="footer-text">© 2026 Detallia.pe — Tortas personalizadas</p>
+      <p class="footer-text">Lima, Perú</p>
     </div>
   </footer>
 
+  <!-- Framework: Bootstrap JS (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/main.js"></script>
 </body>
 </html>
